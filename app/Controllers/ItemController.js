@@ -3,7 +3,11 @@ import _store from "../store.js"
 
 
 function _draw() {
+    let template = ""
+    let items = _store.State.items
 
+    items.forEach((item, index) => template += item.getTemplate(index))
+    document.getElementById("item").innerHTML = template
 }
 
 
@@ -14,6 +18,8 @@ export default class ItemController {
 
     }
 
-    purchaseItem() {}
+    buyMilkyWay(event) {
+
+    }
 
 }

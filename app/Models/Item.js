@@ -6,7 +6,7 @@ export default class Item {
         this.stock = data.stock
     }
 
-    get Template() {
+    getTemplate(index) {
         return this.title
     }
 }

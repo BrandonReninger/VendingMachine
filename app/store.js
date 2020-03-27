@@ -1,14 +1,17 @@
 import Value from "./Models/Value"
 import Item from "./Models/Item.js"
+import Money from "./Models/Money.js"
 
 let _state = {
   activeValue: new Value({
     title: "Value"
   }),
   /** @type {Value[]} */
-  values: []
+  values: [],
   /**@type {Item[]} */
-  items: []
+  items: [],
+  /**@type {Money[]} */
+  moneys: []
 };
 
 
